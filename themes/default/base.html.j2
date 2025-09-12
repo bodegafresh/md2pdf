@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+        :root {
+            --primary: {{ theme.colors.primary }};
+            --text: {{ theme.colors.text }};
+            --bg: {{ theme.colors.bg }};
+            font-family: {{ theme.fonts.body }};
+        }
+    body { color: var(--text); background: var(--bg); }
+    h1,h2,h3,h4 { color: var(--primary); font-family: {{ theme.fonts.headings }}; }
+    img { max-width: 100%; }
+    @page { size: A4; margin: 20mm; }
+    header { position: running(header); }
+    footer { position: running(footer); font-size: 10px; color: #666; }
+    .page-break { page-break-after: always; }
+    </style>
+</head>
+<body>
+    <header><h4>{{ meta.get('proyecto','') }}</h4></header>
+    <footer><span>Generado con md2pdf</span></footer>
+    {{ body | safe }}
+</body>
+</html>

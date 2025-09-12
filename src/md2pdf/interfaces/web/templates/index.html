@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>md2pdf</title></head>
+<body>
+    <h1>md2pdf</h1>
+    <form action="/preview" method="post">
+        <textarea name="md" rows="20" cols="120">---
+cliente: "Kolff"
+proyecto: "Catálogo SAP→HubSpot"
+fecha: 2025-09-11
+---
+
+
+# Demo md2pdf
+
+
+```mermaid
+sequenceDiagram
+    participant H as HubSpot
+    participant S as SAP
+    H->>S: GET /price?sku=ABC
+    S-->>H: 200 OK {price, stock}
+```
+
+
+```chart
+title: Ventas por mes
+type: bar
+data:
+    labels: ["Ene","Feb","Mar"]
+    series:
+        - name: "2025"
+        values: [10,12,18]
+    ```
+    </textarea><br>
+    <select name="theme"><option>default</option><option>kolff</option></select>
+    <button type="submit">Preview</button>
+    </form>
+</body></html>

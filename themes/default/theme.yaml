@@ -1,0 +1,7 @@
+colors:
+  primary: "#0d6efd"
+  text: "#222"
+  bg: "#fff"
+fonts:
+  headings: "DejaVu Sans"
+  body: "DejaVu Sans"

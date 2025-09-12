@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "md2pdf"
+version = "0.1.0"
+description = "Markdown a PDF con branding, diagramas, gráficos e IA"
+requires-python = ">=3.11"
+
+[project.scripts]
+md2pdf = "md2pdf.interfaces.cli:app"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,8 @@
+colors:
+  primary: "#ffd200" # amarillo Kolff
+  text: "#111"
+  bg: "#ffffff"
+fonts:
+  headings: "DejaVu Sans"
+  body: "DejaVu Sans"
+  logo: "logo.svg"
