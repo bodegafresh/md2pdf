@@ -1,0 +1,5 @@
+sequenceDiagram
+participant H as HubSpot
+participant S as SAP
+H->>S: GET /price?sku=ABC
+S-->>H: 200 OK {price, stock}
